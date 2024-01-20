@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvasApp</title>
+    <link rel="stylesheet" href="/canvas.css">
+  
+</head>
+<body>
+
+    <nav-bar></nav-bar>
+    
+  
+    <div class="container">
+
+<div class="canvas">
+    <canvas id="canvas1"></canvas>
+</div>
+<div class="controls">
+
+    <div class="width mb-10">
+        <label for="width">width</label>
+        <input type="number" name="width" id="width" value="540">
+    </div>
+
+    <div class="height mb-10">
+        <label for="height">height</label>
+        <input type="number" name="height" id="height" value="1080">
+    </div>
+
+    <div class="images">
+        <label for="background">background</label>
+        <input type="file" name="background" id="background">
+    </div>
+    
+    <div class="add">
+        <button id="add">add</button>
+    </div>
+    <div class="play">
+        <button>play</button>
+    </div>
+    
+    <div class="record">
+        <button>record</button>
+    </div>
+</div>
+</div>
+    
+
+    <img id="img2" src="" alt="background" >
+   
+    <div class="preview">
+        
+    </div>
+
+    
+    <script type="module" src="./components/library.js" ></script>
+   
+</body>
+</html>
