@@ -1,0 +1,45 @@
+#canvas1{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+.canvas1{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+#img,#img1, #img3,#img4, #player{
+    display: none;
+}
+
+/*#img2{
+    width: 50px;
+}*/
+
+.container{
+    display: flex;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+
+.btn{
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 8px 16px;
+gap: 8px;
+
+background-color: aqua;
+border-radius: 5px;
+color: azure;
+border: none;
+outline: none;
+cursor: pointer;
+
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
