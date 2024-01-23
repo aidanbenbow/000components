@@ -43,3 +43,13 @@ cursor: pointer;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+.variant-error{
+    background-color: red;
+    color: seashell;
+}
+
+.variant-success{
+    background-color: rgb(76, 16, 187);
+    color: rgb(223, 194, 173);
+}

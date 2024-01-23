@@ -9,7 +9,8 @@ export class Button extends HTMLElement {
     
     connectedCallback() {
 const icon = this.getAttribute('data-icon')
-console.log(icon)
+const variant = this.getAttribute('data-variant')
+console.log(variant)
 
     this.shadowRoot.innerHTML = `
     <style>${css}</style>
@@ -22,7 +23,9 @@ console.log(icon)
     </span>
     </button>
     `
-
+if(variant){
+    this.shadowRoot.querySelector('.btn').classList.add(`variant-${variant}`)
+}
 
 }
 }
@@ -44,5 +47,15 @@ const css = `
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
+    }
+
+    .variant-error{
+        background-color: red;
+        color: seashell;
+    }
+    
+    .variant-success{
+        background-color: rgb(76, 16, 187);
+        color: rgb(223, 194, 173);
     }
 `
